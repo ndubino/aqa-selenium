@@ -1,15 +1,15 @@
 # Header
 LOGO = ("xpath", "//header//div[contains(@class, 'text-logo')]")
 
-EXPLORE_DROPDOWN = ("xpath", "//header//a[contains(@class,'nav-link dropdown')]")
-EXPLORE_TOP_TRACKS = ("xpath", "//header//a[@click-event-target='Top tracks']")
-EXPLORE_PYTHON = ("xpath", "//header//a[@click-event-target='Python']")
-EXPLORE_JAVA = ("xpath", "//header//a[@click-event-target='Java']")
-EXPLORE_GO = ("xpath", "//header//a[@click-event-target='Go']")
-PRICING_TAB = ("xpath", "//header//li[@click-event-target='pricing']")
-FOR_BUSINESS_TAB = ("xpath", "//header//li[@click-event-target='join_as_organization']")
-SIGN_IN_BUTTON = ("xpath", "//header//button[contains(@class,'btn btn-outline')]")
-START_FOR_FREE_BUTTON = ("xpath", "//header//button[contains(@class,'btn btn-primary')]")
+EXPLORE_DROPDOWN = ("xpath", "//header//nav//a[contains(@class,'nav-link dropdown')]")
+EXPLORE_TOP_TRACKS = ("xpath", "//header//nav//a[@click-event-target='Top tracks']")
+EXPLORE_PYTHON = ("xpath", "//header//nav//a[@click-event-target='Python']")
+EXPLORE_JAVA = ("xpath", "//header//nav//a[@click-event-target='Java']")
+EXPLORE_GO = ("xpath", "//header//nav//a[@click-event-target='Go']")
+PRICING_TAB = ("xpath", "//header//nav//li[@click-event-target='pricing']")
+FOR_BUSINESS_TAB = ("xpath", "//header//nav//li[@click-event-target='join_as_organization']")
+SIGN_IN_BUTTON = ("xpath", "//header//nav//button[contains(@class,'btn btn-outline')]")
+START_FOR_FREE_BUTTON = ("xpath", "//header//nav//button[contains(@class,'btn btn-primary')]")
 
 # Body
 TOP_TRACKS_TAB = ("xpath", "//main//div[@data-component-name='TrackCategories']/a[text()='Top tracks ']")
