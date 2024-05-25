@@ -1,45 +1,36 @@
 # Header
-LOGO = ("xpath", "//div[contains(@class, 'text-logo')]")
+LOGO = ("xpath", "//header//div[contains(@class, 'text-logo')]")
 
-EXPLORE_DROPDOWN = ("xpath", "//a[contains(@class,'nav-link dropdown')]")
-EXPLORE_TOP_TRACKS = ("xpath", "//a[@click-event-part='explore_tracks_panel' and @click-event-target='Top tracks']")
-EXPLORE_PYTHON = ("xpath", "//a[text()='Python' and contains(@click-event-part, 'explore')]")
-EXPLORE_JAVA = ("xpath", "//a[text()='Java' and contains(@click-event-part, 'explore')]")
-EXPLORE_GO = ("xpath", "//a[text()='Go' and contains(@click-event-part, 'explore')]")
-
-PRICING_TAB = ("xpath", "//a[contains(@class, 'no-active router-link')]")
-FOR_BUSINESS_TAB = ("xpath", "//li/a[(text()=' For Business ')]")
-
-SIGN_IN_BUTTON = ("xpath", "//button[contains(@class,'btn btn-outline')]")
-START_FOR_FREE_BUTTON = ("xpath", "//button[contains(@class,'btn btn-primary')]")
+EXPLORE_DROPDOWN = ("xpath", "//header//a[contains(@class,'nav-link dropdown')]")
+EXPLORE_TOP_TRACKS = ("xpath", "//header//a[@click-event-target='Top tracks']")
+EXPLORE_PYTHON = ("xpath", "//header//a[@click-event-target='Python']")
+EXPLORE_JAVA = ("xpath", "//header//a[@click-event-target='Java']")
+EXPLORE_GO = ("xpath", "//header//a[@click-event-target='Go']")
+PRICING_TAB = ("xpath", "//header//li[@click-event-target='pricing']")
+FOR_BUSINESS_TAB = ("xpath", "//header//li[@click-event-target='join_as_organization']")
+SIGN_IN_BUTTON = ("xpath", "//header//button[contains(@class,'btn btn-outline')]")
+START_FOR_FREE_BUTTON = ("xpath", "//header//button[contains(@class,'btn btn-primary')]")
 
 # Body
-ALL_TRACKS_TAB = ("xpath", "//a[@click-event-context='{\"title\":\"all_tracks\"}']")
-TOP_TRACKS_TAB = ("xpath", "//a[@click-event-context='{\"title\":\"top_tracks\"}']")
-FRONTEND_TAB = ("xpath", "//a[@click-event-context='{\"title\":\"frontend\"}']")
-GO_TAB = ("xpath", "//a[contains(@class,'active-route') and text()='Go ']")
-
-ANDROID_TAB = ("xpath", "//a[text()='Android ']")
-
-PYTHON_CORE_COURSE = ("xpath", "//a[@aria-label='Python Core']")
-INTRODUCTION_TO_PYTHON_COURSE = ("xpath", "//a[@aria-label='Introduction to Python']")
-KOTLIN_CORE_COURSE = ("xpath", "//a[@aria-label='Kotlin Core']")
-INTRODUCTION_TO_JAVA_COURSE = ("xpath", "//a[@aria-label='Introduction to Java']")
-
-# Здесь использовал индексы для привязке к расположению карточки
-FIRS_CARD_IN_BLOCK = ("xpath", "//div[contains(@class,'col-md-6 col-12 mb-4 filtered-item')][1]")
-SECOND_CARD_IN_BLOCK = ("xpath", "//div[contains(@class,'col-md-6 col-12 mb-4 filtered-item')][2]")
+TOP_TRACKS_TAB = ("xpath", "//main//div[@data-component-name='TrackCategories']/a[text()='Top tracks ']")
+GO_TAB = ("xpath", "//main//div[@data-component-name='TrackCategories']/a[text()='Go ']")
+PYTHON_TAB = ("xpath", "//main//div[@data-component-name='TrackCategories']/a[text()='Python ']")
+ANDROID_TAB = ("xpath", "//main//div[@data-component-name='TrackCategories']/a[text()='Android ']")
+PYTHON_CORE_COURSE = ("xpath", "//main//div[@data-component-name='TransitionGroup']/a[@aria-label='Python Core']")
+INTRODUCTION_TO_PYTHON_COURSE = ("xpath", "//main//div/a[@aria-label='Introduction to Python']")
+KOTLIN_CORE_COURSE = ("xpath", "//main//div[@data-component-name='TransitionGroup']/a[@aria-label='Kotlin Core']")
+INTRODUCTION_TO_JAVA_COURSE = ("xpath", "//main//div/a[@aria-label='Introduction to Java']")
 
 # Footer
-TOP_TRACKS = ("xpath", "//a[@click-event-part='footer' and @click-event-target='Top tracks']")
-
-REDDIT_LINK_ICON = ("xpath", "//a[@title='Hyperskill on Reddit']")
-FACEBOOK_LINK_ICON = ("xpath", "//a[@click-event-target='Facebook']")
-LINKEDIN_LINK_ICON = ("xpath", "//a[@click-event-target='Linkedin']")
-DISCORD_LINK_ICON = ("xpath", "//a[@click-event-target='Discord']")
-
-BLOG = ("xpath", "//a[@click-event-target='blog' and @click-event-part='footer']")
-UNIVERSITY = ("xpath", "//a[@click-event-target='university' and @click-event-part='footer']]")
-
-GOOGLE_PLAY_BUTTON = ("xpath", "//a[@click-event-target='google-play']")
-APP_STORE_BUTTON = ("xpath", "//a[@click-event-target='app-store']")
+TOP_TRACKS = ("xpath", "//footer//a[@click-event-target='Top tracks']")
+PYTHON = ("xpath", "//footer//a[@click-event-target='Python']")
+JAVA = ("xpath", "//footer//a[@click-event-target='Java']")
+KOTLIN = ("xpath", "//footer//a[@click-event-target='Kotlin']")
+REDDIT_LINK_ICON = ("xpath", "//footer//a[@title='Hyperskill on Reddit']")
+FACEBOOK_LINK_ICON = ("xpath", "//footer//a[@click-event-target='Facebook']")
+LINKEDIN_LINK_ICON = ("xpath", "//footer//a[@click-event-target='Linkedin']")
+DISCORD_LINK_ICON = ("xpath", "//footer//a[@click-event-target='Discord']")
+BLOG = ("xpath", "//footer//a[@click-event-target='blog']")
+UNIVERSITY = ("xpath", "//footer//a[@click-event-target='university']")
+GOOGLE_PLAY_BUTTON = ("xpath", "//footer//a[@click-event-target='google-play']")
+APP_STORE_BUTTON = ("xpath", "//footer//a[@click-event-target='app-store']")
