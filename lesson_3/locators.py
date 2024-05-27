@@ -13,13 +13,13 @@ START_FOR_FREE_BUTTON = ("xpath", "//header//button[contains(@class,'btn btn-pri
 
 # Body
 TOP_TRACKS_TAB = ("xpath", "//main//div[@data-component-name='TrackCategories']/a[text()='Top tracks ']")
-GO_TAB = ("xpath", "//main//div[@data-component-name='TrackCategories']/a[text()='Go ']")
-PYTHON_TAB = ("xpath", "//main//div[@data-component-name='TrackCategories']/a[text()='Python ']")
-ANDROID_TAB = ("xpath", "//main//div[@data-component-name='TrackCategories']/a[text()='Android ']")
-PYTHON_CORE_COURSE = ("xpath", "//main//div[@data-component-name='TransitionGroup']/a[@aria-label='Python Core']")
-INTRODUCTION_TO_PYTHON_COURSE = ("xpath", "//main//div/a[@aria-label='Introduction to Python']")
-KOTLIN_CORE_COURSE = ("xpath", "//main//div[@data-component-name='TransitionGroup']/a[@aria-label='Kotlin Core']")
-INTRODUCTION_TO_JAVA_COURSE = ("xpath", "//main//div/a[@aria-label='Introduction to Java']")
+GO_TAB = ("xpath", "//main//a[text()='Go ']")
+PYTHON_TAB = ("xpath", "//main//a[text()='Python ']")
+ANDROID_TAB = ("xpath", "//main//a[text()='Android ']")
+PYTHON_CORE_COURSE = ("xpath", "//main//a[@aria-label='Python Core']")
+INTRODUCTION_TO_PYTHON_COURSE = ("xpath", "//main//a[@aria-label='Python Core']")
+KOTLIN_CORE_COURSE = ("xpath", "//main//a[@aria-label='Kotlin Core']")
+INTRODUCTION_TO_JAVA_COURSE = ("xpath", "//main//div//a[@aria-label='Introduction to Java']")
 
 # Footer
 TOP_TRACKS = ("xpath", "//footer//a[@click-event-target='Top tracks']")
