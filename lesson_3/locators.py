@@ -12,7 +12,7 @@ SIGN_IN_BUTTON = ("xpath", "//header//button[contains(@class,'btn btn-outline')]
 START_FOR_FREE_BUTTON = ("xpath", "//header//button[contains(@class,'btn btn-primary')]")
 
 # Body
-TOP_TRACKS_TAB = ("xpath", "//main//div[@data-component-name='TrackCategories']/a[text()='Top tracks ']")
+TOP_TRACKS_TAB = ("xpath", "//main//a[text()='Top tracks ']")
 GO_TAB = ("xpath", "//main//a[text()='Go ']")
 PYTHON_TAB = ("xpath", "//main//a[text()='Python ']")
 ANDROID_TAB = ("xpath", "//main//a[text()='Android ']")
